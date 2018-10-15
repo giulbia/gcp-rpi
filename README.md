@@ -15,6 +15,6 @@ Useful links:
 
 `docker run -t -i --name gcloud-config giulbia/gcp-rpi gcloud auth login`
 
-`docker run -ti --volumes-from gcloud-config giulbia/gcp-rpi gcloud set project PROJECT-ID`
+`docker run -ti --volumes-from gcloud-config giulbia/gcp-rpi gcloud config set project PROJECT-ID`
 
 `docker run -ti --volumes-from gcloud-config giulbia/gcp-rpi gcloud config list`
