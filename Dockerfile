@@ -28,6 +28,8 @@ VOLUME ["/root/.config"]
 
 #RUN apt-get update
 RUN apt-get install -y python python-pip alsa-utils build-essential
+RUN pip install google-api-python-client==1.7.4 google-auth-httplib2==0.0.3 google-auth==1.5.1 google-cloud-pubsub==0.37.2
+RUN pip install cryptography==2.3.1 pyjwt==1.6.4 paho-mqtt==1.3.1
 #RUN apt-get install python-dev
 #RUN pip install numpy
 #RUN apt-get install -y libblas-dev
